@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Usako & Kameko — Minimal Viewer (v6)</title>
+  <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+  <main class="stage" id="stage">
+    <div id="imageWrap"><img id="img" alt="scene"></div>
+    <figcaption id="cap"></figcaption>
+    <div id="bottomTap" aria-hidden="true"></div>
+    <aside id="nav" aria-label="Controls">
+      <div class="row">
+        <span id="badge" class="badge">0 / 0</span>
+        <input id="scrub" type="range" min="0" max="0" step="1" value="0">
+      </div>
+      <div class="row">
+        <button id="mute" class="icon" aria-pressed="false" title="Mute/Unmute">🔊</button>
+        <input id="vol" type="range" min="0" max="1" step="0.01" value="0.8">
+      </div>
+      <audio id="bgm" src="audio/bgm.mp3" preload="auto" loop></audio>
+    </aside>
+  </main>
+  <script type="module" src="js/core.js"></script>
+</body>
+</html>
